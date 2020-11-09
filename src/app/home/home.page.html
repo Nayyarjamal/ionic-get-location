@@ -1,0 +1,24 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Get Location
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Get Location</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <ion-button (click)="grantLocationPermission();">Get Location</ion-button>
+    <p>{{message}}</p>
+
+    <h2>{{geoLatitude}}</h2>
+    <h2>{{geoLongitude}}</h2>
+    <h2>{{geoAccuracy}}</h2>
+  </div>
+</ion-content>
